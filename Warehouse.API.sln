@@ -5,6 +5,22 @@ VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Warehouse.API", "Warehouse.API.csproj", "{9D071C58-80EB-4CA5-9FAA-703CC519ECC5}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{1447D874-3F1A-4131-A262-21F26A0B371E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{8348F7C1-9639-424C-B4E1-23887C13EF61}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{E0ECBE0E-AE27-46CA-A56F-E13F6D898252}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Warehouse.API.Infrastructure", "Infrastructure\Warehouse.API.Infrastructure\Warehouse.API.Infrastructure.csproj", "{6853DF5C-11AB-4C1F-9338-E562AB5B16A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Warehouse.API.Migration", "Infrastructure\Warehouse.API.Migration\Warehouse.API.Migration.csproj", "{F8610A0D-45BF-4ADF-A356-4C66E413B267}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Warehouse.API.Domain", "Core\Warehouse.API.Domain\Warehouse.API.Domain.csproj", "{F74C5600-D6CB-42F6-8D5B-9257F21842D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Warehouse.API.Application", "Core\Warehouse.API.Application\Warehouse.API.Application.csproj", "{8D0D7651-F7E8-4D2A-A01C-07B8AAB5767A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Warehouse.API.Application.Abstraction", "Core\Warehouse.API.Application.Abstraction\Warehouse.API.Application.Abstraction.csproj", "{164E8F40-123C-48B4-9BE3-AFF5F1F42A3A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,11 +31,38 @@ Global
 		{9D071C58-80EB-4CA5-9FAA-703CC519ECC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D071C58-80EB-4CA5-9FAA-703CC519ECC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9D071C58-80EB-4CA5-9FAA-703CC519ECC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6853DF5C-11AB-4C1F-9338-E562AB5B16A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6853DF5C-11AB-4C1F-9338-E562AB5B16A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6853DF5C-11AB-4C1F-9338-E562AB5B16A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6853DF5C-11AB-4C1F-9338-E562AB5B16A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8610A0D-45BF-4ADF-A356-4C66E413B267}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8610A0D-45BF-4ADF-A356-4C66E413B267}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8610A0D-45BF-4ADF-A356-4C66E413B267}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8610A0D-45BF-4ADF-A356-4C66E413B267}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F74C5600-D6CB-42F6-8D5B-9257F21842D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F74C5600-D6CB-42F6-8D5B-9257F21842D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F74C5600-D6CB-42F6-8D5B-9257F21842D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F74C5600-D6CB-42F6-8D5B-9257F21842D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D0D7651-F7E8-4D2A-A01C-07B8AAB5767A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D0D7651-F7E8-4D2A-A01C-07B8AAB5767A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D0D7651-F7E8-4D2A-A01C-07B8AAB5767A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D0D7651-F7E8-4D2A-A01C-07B8AAB5767A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{164E8F40-123C-48B4-9BE3-AFF5F1F42A3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{164E8F40-123C-48B4-9BE3-AFF5F1F42A3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{164E8F40-123C-48B4-9BE3-AFF5F1F42A3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{164E8F40-123C-48B4-9BE3-AFF5F1F42A3A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {049EB904-299E-4D4E-BCD4-1BC85D09EC11}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6853DF5C-11AB-4C1F-9338-E562AB5B16A3} = {1447D874-3F1A-4131-A262-21F26A0B371E}
+		{F8610A0D-45BF-4ADF-A356-4C66E413B267} = {1447D874-3F1A-4131-A262-21F26A0B371E}
+		{F74C5600-D6CB-42F6-8D5B-9257F21842D8} = {8348F7C1-9639-424C-B4E1-23887C13EF61}
+		{8D0D7651-F7E8-4D2A-A01C-07B8AAB5767A} = {8348F7C1-9639-424C-B4E1-23887C13EF61}
+		{164E8F40-123C-48B4-9BE3-AFF5F1F42A3A} = {8348F7C1-9639-424C-B4E1-23887C13EF61}
 	EndGlobalSection
 EndGlobal
